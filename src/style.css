@@ -1,0 +1,43 @@
+:root {
+  --fontStack: -apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji', sans-serif;
+  --accentColor: #f33737;
+  font-size: 16px;
+}
+
+::selection {
+  background-color: var(--accentColor);
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: var(--font);
+  height: 100vh;
+  line-height: 1.61;
+}
+
+a {
+  color: var(--accentColor);
+}
+
+button {
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+}
+
+input, textarea, select, option {
+  display: block;
+  font-family: var(--fontStack);
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+}
